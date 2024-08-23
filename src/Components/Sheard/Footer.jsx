@@ -6,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <div>
-            <div className="bg-base-200 py-12 p-2">
+            <div className=" py-12 p-2">
                 <footer className="footer text-base-content container mx-auto">
                     <aside>
                         <Link href={"/"}>
