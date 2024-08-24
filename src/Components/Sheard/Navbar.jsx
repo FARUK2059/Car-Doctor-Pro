@@ -1,11 +1,17 @@
+"use client"
+
+// import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { IoCartOutline, IoSearchSharp  } from "react-icons/io5";
+import { IoCartOutline, IoSearchSharp } from "react-icons/io5";
 
 
 
 const Navbar = () => {
+
+    // const session = useSession()
+
     return (
         <div className="">
             <div className="navbar container mx-auto">

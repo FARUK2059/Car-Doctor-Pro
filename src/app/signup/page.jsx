@@ -8,6 +8,30 @@ import { BsGithub, BsGoogle } from "react-icons/bs";
 
 
 const Page = () => {
+
+    const handleSignUp = async (event) => {
+        event.preventDefault();
+        const newUser = {
+            name: event.target.name.value,
+            email: event.target.email.value,
+            password: event.target.password.value,
+        };
+        console.log(newUser);
+        
+
+        // const resp = await fetch("https://car-doctor-pro-nine.vercel.app/signup/api", {
+        //     method: "POST",
+        //     body: JSON.stringify(newUser),
+        //     headers: {
+        //         "content-type": "application/json",
+        //     },
+        // });
+        // if (resp.status === 200) {
+        //     event.target.reset();
+        // }
+    };
+
+
     return (
         <div>
             <div className="container px-24 mx-auto py-24">
@@ -24,7 +48,7 @@ const Page = () => {
                         <h6 className="text-3xl font-semibold text-primary text-center mb-12">
                             Sign Up
                         </h6>
-                        <form  action="">
+                        <form action="">
                             <label htmlFor="email">Name</label> <br />
                             <input
                                 type="text"

@@ -14,17 +14,20 @@ const page = () => {
     // const searchParams = useSearchParams();
     // const path = searchParams.get("redirect");
 
-    // const handleLogin = async (event) => {
-    //     event.preventDefault();
-    //     const email = event.target.email.value;
-    //     const password = event.target.password.value;
-    //     const resp = await signIn("credentials", {
-    //         email,
-    //         password,
-    //         redirect: true,
-    //         callbackUrl: path ? path : "/",
-    //     });
-    // };
+    const handleLogin = async (event) => {
+        event.preventDefault();
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+        console.log(email, password);
+        
+
+        // const resp = await signIn("credentials", {
+        //     email,
+        //     password,
+        //     redirect: true,
+        //     callbackUrl: path ? path : "/",
+        // });
+    };
 
     return (
         <div>
