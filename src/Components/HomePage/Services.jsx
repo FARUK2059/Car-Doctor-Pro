@@ -1,6 +1,6 @@
 import ServiceCard from "./ServiceCard/ServiceCard";
 
-import { services } from '../../ServiceData/ServiceData'
+import { services } from '../../lib/ServiceData'
 
 
 
@@ -14,6 +14,7 @@ const Services = () => {
 
     // Menual Inpute Data
     console.log(services);
+
     
 
 
