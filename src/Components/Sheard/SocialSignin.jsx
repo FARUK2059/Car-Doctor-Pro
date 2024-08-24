@@ -1,4 +1,5 @@
 
+"use client";
 import { BsGithub, BsGoogle } from "react-icons/bs";
 
 

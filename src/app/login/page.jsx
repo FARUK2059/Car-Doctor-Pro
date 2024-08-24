@@ -1,6 +1,9 @@
+
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-// import SocialSignin from "@/Components/Sheard/SocialSignin";
+import SocialSignin from "@/Components/Sheard/SocialSignin";
 
 
 
@@ -26,7 +29,7 @@ const page = () => {
     return (
         <div>
             <div className="container px-24 mx-auto py-24">
-                <div className="grid grid-cols-2 gap-12 items-center">
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <Image
                             src="/images/login/login.svg"
@@ -65,7 +68,7 @@ const page = () => {
                         </form>
                         <div>
                             <h6 className="my-12 text-center">or sign in with</h6>
-                            {/* <SocialSignin /> */}
+                            <SocialSignin />
                             <h6 className="my-12 text-center">
                                 not have account ?{" "}
                                 <Link className="text-primary font-semibold" href={"/signup"}>
