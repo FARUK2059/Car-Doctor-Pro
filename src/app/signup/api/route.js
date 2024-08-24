@@ -1,5 +1,5 @@
 
-import { connectDB } from "@/lib/connectDB";
+import { connectDB } from "@/lib/conectDB";
 import bcrypt from "bcrypt";
 import { NextResponse } from "next/server";
 export const POST = async (request) => {

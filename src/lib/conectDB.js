@@ -5,7 +5,10 @@ export const connectDB = async () => {
     if (db) return db;
     try {
         // const uri = process.env.NEXT_PUBLIC_MONGODB_URI
-        const uri = `mongodb+srv://${process.env.ENV_QUERY}:${process.env.ENV_QUERYPASS}@cluster0.6e55rfm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+        
+
+        const uri = `${process.env.MONGODBCONECT}`
+
         
         const client = new MongoClient(uri, {
             serverApi: {
