@@ -82,6 +82,7 @@ const Navbar = () => {
                         {/* <div>
                             <Image alt={session?.data?.user?.name} src={session?.data?.user?.image} height={50} width={50} className="rounded-full" />
                         </div> */}
+                        
                         {/* {session?.status === 'loading' &&
                             <h6>Loading....</h6>
                         }
