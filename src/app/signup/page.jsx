@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Link from "next/link";
 
@@ -11,28 +11,6 @@ import Image from "next/image";
 
 const Page = () => {
 
-    // const handleSignUp = async (event) => {
-    //     event.preventDefault();
-    //     const newUser = {
-    //         name: event.target.name.value,
-    //         email: event.target.email.value,
-    //         password: event.target.password.value,
-    //     };
-    //     console.log(newUser);
-        
-
-    //     const resp = await fetch("http://localhost:3000/signup/api", {
-    //         method: "POST",
-    //         body: JSON.stringify(newUser),
-    //         headers: {
-    //             "content-type": "application/json",
-    //         },
-    //     });
-    //     if (resp.status === 200) {
-    //         event.target.reset();
-    //     }
-    // };
-
     const handleSignUp = async (event) => {
         event.preventDefault();
         const newUser = {
@@ -40,23 +18,23 @@ const Page = () => {
             email: event.target.email.value,
             password: event.target.password.value,
         };
-        console.log(newUser);
-        
-        const resp = await fetch("http://localhost:3000/signup/api", {
+
+        const resp = await fetch("/signup/api", {
             method: "POST",
             body: JSON.stringify(newUser),
             headers: {
-                "content-type": "application/json",
+                "Content-Type": "application/json",
             },
         });
+
         if (resp.status === 200) {
             event.target.reset();
         }
-        
+
         const data = await resp.json();
         console.log(data);
-        
     };
+
 
 
     return (
