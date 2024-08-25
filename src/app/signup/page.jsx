@@ -30,9 +30,6 @@ const Page = () => {
         if (resp.status === 200) {
             event.target.reset();
         }
-
-        const data = await resp.json();
-        console.log(data);
     };
 
 
