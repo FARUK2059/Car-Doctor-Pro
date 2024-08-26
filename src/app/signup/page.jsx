@@ -5,9 +5,6 @@ import Link from "next/link";
 import SocialSignin from "@/Components/Sheard/SocialSignin";
 import Image from "next/image";
 
-// import { BsGithub, BsGoogle } from "react-icons/bs";
-
-
 
 const Page = () => {
 
