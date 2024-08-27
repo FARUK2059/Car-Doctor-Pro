@@ -1,12 +1,9 @@
-
-
 "use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { signIn, useSession } from "next-auth/react";
-// import { BsGoogle, BsGithub } from "react-icons/bs";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import SocialSignin from "@/Components/Sheard/SocialSignin";
 const Page = () => {
