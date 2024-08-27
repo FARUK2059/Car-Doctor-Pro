@@ -1,6 +1,6 @@
 "use client"
 
-import { useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,6 +11,8 @@ import { IoCartOutline, IoSearchSharp } from "react-icons/io5";
 const Navbar = () => {
 
     const session = useSession()
+    console.log(session);
+
 
     return (
         <div className="">
@@ -70,6 +72,7 @@ const Navbar = () => {
                                     </Link>
                                 ))}
                             </div>
+                            
                         </div>
 
                     </ul>
@@ -82,9 +85,9 @@ const Navbar = () => {
                         {/* <div>
                             <Image alt={session?.data?.user?.name} src={session?.data?.user?.image} height={50} width={50} className="rounded-full" />
                         </div> */}
-                        
+
                         {session?.status === 'loading' &&
-                            <h6>Loading....</h6>
+                            <h6><span className="loading loading-spinner text-warning"></span></h6>
                         }
                         {session?.status === 'unauthenticated' &&
                             <Link href="/login" className="btn btn-primary px-8">Login</Link>
