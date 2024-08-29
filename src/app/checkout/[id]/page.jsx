@@ -16,17 +16,17 @@ const Checkout = ({ params }) => {
   const { _id, title, description, img, price, facility } = service || {};
 
   const handleBooking = async (event) => {
-    event.preventDefault();
-    const newBooking = { 
-        email : data?.user?.email,
-        name : data?.user?.name,
-        address : event.target.address.value,
-        phone : event.target.phone.value,
-        date : event.target.date.value,
-        serviceTitle : title,
-        serviceID : _id,
-        price : price,
-    }
+    // event.preventDefault();
+    // const newBooking = { 
+    //     email : data?.user?.email,
+    //     name : data?.user?.name,
+    //     address : event.target.address.value,
+    //     phone : event.target.phone.value,
+    //     date : event.target.date.value,
+    //     serviceTitle : title,
+    //     serviceID : _id,
+    //     price : price,
+    // }
 
     // const resp = await fetch('https://car-doctor-pro-nine.vercel.app/checkout/api/new-booking', {
     //     method: 'POST',
