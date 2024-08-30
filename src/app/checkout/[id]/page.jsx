@@ -2,17 +2,17 @@
 "use client";
 // import { getServicesDetails } from "@/services/getServices"
 import { useSession } from "next-auth/react";
-import Image from "next/image";
+// import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 
 const Checkout = ({ params }) => {
     const {data} = useSession();
   const [ service, setService ] = useState({});
-  const loadService = async () => {
-    const details = await getServicesDetails(params.id);
-    setService(details.service);
-  };
+  // const loadService = async () => {
+  //   const details = await getServicesDetails(params.id);
+  //   setService(details.service);
+  // };
   const { _id, title, description, img, price, facility } = service || {};
 
   const handleBooking = async (event) => {
