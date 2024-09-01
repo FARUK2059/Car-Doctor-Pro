@@ -10,7 +10,7 @@ import React, { useEffect, useState } from "react";
 
 const Checkout = ({ params }) => {
     const {data} = useSession();
-  const [ service, setService ] = useState({});
+  // const [ service, setService ] = useState({});
   // const loadService = async () => {
   //   const details = await getServicesDetails(params.id);
   //   setService(details.service);
