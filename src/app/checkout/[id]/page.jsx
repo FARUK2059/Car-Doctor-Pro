@@ -15,7 +15,7 @@ const Checkout = ({ params }) => {
   //   const details = await getServicesDetails(params.id);
   //   setService(details.service);
   // };
-  const { _id, title, description, img, price, facility } = service || {};
+  // const { _id, title, description, img, price, facility } = service || {};
 
   const handleBooking = async (event) => {
     // event.preventDefault();
