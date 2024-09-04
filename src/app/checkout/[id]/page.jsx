@@ -38,7 +38,7 @@ const Checkout = ({ params }) => {
     //     }
     // })
     const response =await resp?.json()
-    toast.success(response?.message)
+    // toast.success(response?.message)
     event.target.reset()
 
   };
