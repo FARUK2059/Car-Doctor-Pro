@@ -37,7 +37,7 @@ const Checkout = ({ params }) => {
     //         "content-type" : "application/json"
     //     }
     // })
-    const response =await resp?.json()
+    // const response =await resp?.json()
     // toast.success(response?.message)
     event.target.reset()
 
