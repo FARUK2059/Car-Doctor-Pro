@@ -17,7 +17,7 @@ const Checkout = ({ params }) => {
   // };
   // const { _id, title, description, img, price, facility } = service || {};
 
-  const handleBooking = async (event) => {
+  // const handleBooking = async (event) => {
     // event.preventDefault();
     // const newBooking = { 
     //     email : data?.user?.email,
