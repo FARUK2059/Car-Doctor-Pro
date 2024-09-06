@@ -15,6 +15,6 @@ export const middleware = async (request) => {
   return NextResponse.next();
 };
 
-export const config = {
+// export const config = {
 //   matcher: ["/my-bookings/:path*", "/services/:path*",],
-};
+// };
