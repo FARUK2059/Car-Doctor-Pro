@@ -4,7 +4,7 @@
 
 export const middleware = async (request) => {
   const token = cookies(request).get("__Secure-next-auth.session-token");
-  const pathname = request.nextUrl.pathname
+  // const pathname = request.nextUrl.pathname
   // if(pathname.includes('api')) {
   //     return NextResponse.next();
   // }
